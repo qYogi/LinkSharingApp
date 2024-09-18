@@ -1,12 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-export const Route = createFileRoute("/")({
+import LoginForm from "./index.Login.lazy.tsx";
+export const Route = createFileRoute("/(authentication)/login/")({
   component: Index,
 });
 
 function Index() {
   return (
     <div className="p-2">
-      <h3 className="text-fuchsia-600">Welcome Home!</h3>
+      <LoginForm />
     </div>
   );
 }
