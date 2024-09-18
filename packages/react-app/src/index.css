@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+    :root{
+        --purple: #633cff;
+        --purple-hover:#beadff;
+        --light-purple: #efebff;
+        --dark-gray: #333333;
+        --gray:#737373;
+        --borders: #d9d9d9;
+        --light-gray: #fafafa;
+        --white: #ffffff;
+        --red: #ff3939;
+    }
+    
+    :root{
+        --spacing: 1.5rem;
+        --inner-spacing: 1rem;
+    }
+    
+    @media screen(sm) {
+        :root{
+            --spacing: 1rem;
+            --inner-spacing: 0.5rem;
+        }
+    }
+
+    @media screen(md) {
+        :root{
+            --spacing: 2rem;
+            --inner-spacing: 1.5rem;
+        }
+    }
+
+    @media screen(lg) {
+        :root{
+            --spacing: 2.5rem;
+            --inner-spacing: 2rem;
+        }
+    }
+
+}
+
