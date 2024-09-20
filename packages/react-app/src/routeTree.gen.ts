@@ -11,59 +11,212 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as IndexImport } from './routes/index'
+import { Route as PublicImport } from './routes/_public'
+import { Route as PrivateImport } from './routes/_private'
+import { Route as PublicSignupImport } from './routes/_public/signup'
+import { Route as PublicLoginImport } from './routes/_public/login'
+import { Route as PrivateDashboardImport } from './routes/_private/dashboard'
+import { Route as PrivateDashboardProfileImport } from './routes/_private/dashboard/profile'
+import { Route as PrivateDashboardAddlinksImport } from './routes/_private/dashboard/addlinks'
 
 // Create/Update Routes
 
-const IndexRoute = IndexImport.update({
-  path: '/',
+const PublicRoute = PublicImport.update({
+  id: '/_public',
   getParentRoute: () => rootRoute,
+} as any)
+
+const PrivateRoute = PrivateImport.update({
+  id: '/_private',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const PublicSignupRoute = PublicSignupImport.update({
+  path: '/signup',
+  getParentRoute: () => PublicRoute,
+} as any)
+
+const PublicLoginRoute = PublicLoginImport.update({
+  path: '/login',
+  getParentRoute: () => PublicRoute,
+} as any)
+
+const PrivateDashboardRoute = PrivateDashboardImport.update({
+  path: '/dashboard',
+  getParentRoute: () => PrivateRoute,
+} as any)
+
+const PrivateDashboardProfileRoute = PrivateDashboardProfileImport.update({
+  path: '/profile',
+  getParentRoute: () => PrivateDashboardRoute,
+} as any)
+
+const PrivateDashboardAddlinksRoute = PrivateDashboardAddlinksImport.update({
+  path: '/addlinks',
+  getParentRoute: () => PrivateDashboardRoute,
 } as any)
 
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexImport
+    '/_private': {
+      id: '/_private'
+      path: ''
+      fullPath: ''
+      preLoaderRoute: typeof PrivateImport
       parentRoute: typeof rootRoute
+    }
+    '/_public': {
+      id: '/_public'
+      path: ''
+      fullPath: ''
+      preLoaderRoute: typeof PublicImport
+      parentRoute: typeof rootRoute
+    }
+    '/_private/dashboard': {
+      id: '/_private/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof PrivateDashboardImport
+      parentRoute: typeof PrivateImport
+    }
+    '/_public/login': {
+      id: '/_public/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof PublicLoginImport
+      parentRoute: typeof PublicImport
+    }
+    '/_public/signup': {
+      id: '/_public/signup'
+      path: '/signup'
+      fullPath: '/signup'
+      preLoaderRoute: typeof PublicSignupImport
+      parentRoute: typeof PublicImport
+    }
+    '/_private/dashboard/addlinks': {
+      id: '/_private/dashboard/addlinks'
+      path: '/addlinks'
+      fullPath: '/dashboard/addlinks'
+      preLoaderRoute: typeof PrivateDashboardAddlinksImport
+      parentRoute: typeof PrivateDashboardImport
+    }
+    '/_private/dashboard/profile': {
+      id: '/_private/dashboard/profile'
+      path: '/profile'
+      fullPath: '/dashboard/profile'
+      preLoaderRoute: typeof PrivateDashboardProfileImport
+      parentRoute: typeof PrivateDashboardImport
     }
   }
 }
 
 // Create and export the route tree
 
+interface PrivateDashboardRouteChildren {
+  PrivateDashboardAddlinksRoute: typeof PrivateDashboardAddlinksRoute
+  PrivateDashboardProfileRoute: typeof PrivateDashboardProfileRoute
+}
+
+const PrivateDashboardRouteChildren: PrivateDashboardRouteChildren = {
+  PrivateDashboardAddlinksRoute: PrivateDashboardAddlinksRoute,
+  PrivateDashboardProfileRoute: PrivateDashboardProfileRoute,
+}
+
+const PrivateDashboardRouteWithChildren =
+  PrivateDashboardRoute._addFileChildren(PrivateDashboardRouteChildren)
+
+interface PrivateRouteChildren {
+  PrivateDashboardRoute: typeof PrivateDashboardRouteWithChildren
+}
+
+const PrivateRouteChildren: PrivateRouteChildren = {
+  PrivateDashboardRoute: PrivateDashboardRouteWithChildren,
+}
+
+const PrivateRouteWithChildren =
+  PrivateRoute._addFileChildren(PrivateRouteChildren)
+
+interface PublicRouteChildren {
+  PublicLoginRoute: typeof PublicLoginRoute
+  PublicSignupRoute: typeof PublicSignupRoute
+}
+
+const PublicRouteChildren: PublicRouteChildren = {
+  PublicLoginRoute: PublicLoginRoute,
+  PublicSignupRoute: PublicSignupRoute,
+}
+
+const PublicRouteWithChildren =
+  PublicRoute._addFileChildren(PublicRouteChildren)
+
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
+  '': typeof PublicRouteWithChildren
+  '/dashboard': typeof PrivateDashboardRouteWithChildren
+  '/login': typeof PublicLoginRoute
+  '/signup': typeof PublicSignupRoute
+  '/dashboard/addlinks': typeof PrivateDashboardAddlinksRoute
+  '/dashboard/profile': typeof PrivateDashboardProfileRoute
 }
 
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
+  '': typeof PublicRouteWithChildren
+  '/dashboard': typeof PrivateDashboardRouteWithChildren
+  '/login': typeof PublicLoginRoute
+  '/signup': typeof PublicSignupRoute
+  '/dashboard/addlinks': typeof PrivateDashboardAddlinksRoute
+  '/dashboard/profile': typeof PrivateDashboardProfileRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
-  '/': typeof IndexRoute
+  '/_private': typeof PrivateRouteWithChildren
+  '/_public': typeof PublicRouteWithChildren
+  '/_private/dashboard': typeof PrivateDashboardRouteWithChildren
+  '/_public/login': typeof PublicLoginRoute
+  '/_public/signup': typeof PublicSignupRoute
+  '/_private/dashboard/addlinks': typeof PrivateDashboardAddlinksRoute
+  '/_private/dashboard/profile': typeof PrivateDashboardProfileRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | ''
+    | '/dashboard'
+    | '/login'
+    | '/signup'
+    | '/dashboard/addlinks'
+    | '/dashboard/profile'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | ''
+    | '/dashboard'
+    | '/login'
+    | '/signup'
+    | '/dashboard/addlinks'
+    | '/dashboard/profile'
+  id:
+    | '__root__'
+    | '/_private'
+    | '/_public'
+    | '/_private/dashboard'
+    | '/_public/login'
+    | '/_public/signup'
+    | '/_private/dashboard/addlinks'
+    | '/_private/dashboard/profile'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
+  PrivateRoute: typeof PrivateRouteWithChildren
+  PublicRoute: typeof PublicRouteWithChildren
 }
 
 const rootRouteChildren: RootRouteChildren = {
-  IndexRoute: IndexRoute,
+  PrivateRoute: PrivateRouteWithChildren,
+  PublicRoute: PublicRouteWithChildren,
 }
 
 export const routeTree = rootRoute
@@ -78,11 +231,46 @@ export const routeTree = rootRoute
     "__root__": {
       "filePath": "__root.tsx",
       "children": [
-        "/"
+        "/_private",
+        "/_public"
       ]
     },
-    "/": {
-      "filePath": "index.tsx"
+    "/_private": {
+      "filePath": "_private.tsx",
+      "children": [
+        "/_private/dashboard"
+      ]
+    },
+    "/_public": {
+      "filePath": "_public.tsx",
+      "children": [
+        "/_public/login",
+        "/_public/signup"
+      ]
+    },
+    "/_private/dashboard": {
+      "filePath": "_private/dashboard.tsx",
+      "parent": "/_private",
+      "children": [
+        "/_private/dashboard/addlinks",
+        "/_private/dashboard/profile"
+      ]
+    },
+    "/_public/login": {
+      "filePath": "_public/login.tsx",
+      "parent": "/_public"
+    },
+    "/_public/signup": {
+      "filePath": "_public/signup.tsx",
+      "parent": "/_public"
+    },
+    "/_private/dashboard/addlinks": {
+      "filePath": "_private/dashboard/addlinks.tsx",
+      "parent": "/_private/dashboard"
+    },
+    "/_private/dashboard/profile": {
+      "filePath": "_private/dashboard/profile.tsx",
+      "parent": "/_private/dashboard"
     }
   }
 }

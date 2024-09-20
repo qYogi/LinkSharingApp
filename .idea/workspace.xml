@@ -5,24 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="205318c7-20b1-4b08-9bd1-66089204e354" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LinkSharingApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infra/web.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/index.lazy.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infra/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/authentification/LoginForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/AddLinksScreen.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/AddProfileDetailScreen.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/navbar/Links.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/navbar/Navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/lib/contextLib.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/lib/errorLib.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/lib/hooksLib.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_private.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard/addlinks.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard/profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_public.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_public/login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_public/signup.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/svg/LinksSvg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/svg/Logo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/svg/PreviewSvg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/svg/ProfileSvg.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infra/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/infra/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infra/storage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/infra/storage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/web.ts" beforeDir="false" afterPath="$PROJECT_DIR$/infra/web.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/example/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/src/example/test/index.test.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/core/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/sst-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/functions/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/functions/src/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/functions/src/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/functions/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/functions/sst-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/scripts/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/scripts/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/scripts/src/example.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/eslint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/eslint.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routeTree.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/routeTree.gen.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/(authentication)/login/index.Login.lazy.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/(authentication)/login/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/(authentication)/signup/index.Signup.lazy.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/authentification/SignupScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/(authentication)/signup/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/scripts/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/scripts/sst-env.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sst-env.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sst.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sst.config.ts" afterDir="false" />
@@ -31,6 +55,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,7 +91,8 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#4 on login-signup-UI&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bogdan/WebstormProjects/LinkSharingApp/packages/react-app/src/routes&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -73,8 +105,16 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/react-app/src/routes" />
+      <recent name="$PROJECT_DIR$/packages/react-app/authentication/signUp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/packages/frontend" />
+      <recent name="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard" />
+      <recent name="$PROJECT_DIR$/packages/react-app/src/routes/_private" />
+      <recent name="$PROJECT_DIR$/packages/react-app/src/routes/_private/_addlinks" />
+      <recent name="$PROJECT_DIR$/packages/react-app/src/routes/_private/_dashboard" />
+      <recent name="$PROJECT_DIR$/packages/react-app/src/dashboard/navbar" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -94,7 +134,13 @@
       <updated>1726570473823</updated>
       <workItem from="1726570474839" duration="2150000" />
       <workItem from="1726572953453" duration="294000" />
-      <workItem from="1726573483753" duration="6151000" />
+      <workItem from="1726573483753" duration="6904000" />
+      <workItem from="1726639393888" duration="30270000" />
+      <workItem from="1726721521399" duration="3834000" />
+      <workItem from="1726725559422" duration="5458000" />
+      <workItem from="1726731406746" duration="680000" />
+      <workItem from="1726732172925" duration="18289000" />
+      <workItem from="1726752837983" duration="14150000" />
     </task>
     <servers />
   </component>
