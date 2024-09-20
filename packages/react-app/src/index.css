@@ -15,12 +15,12 @@
         --white: #ffffff;
         --red: #ff3939;
     }
-    
+
     :root{
         --spacing: 1.5rem;
         --inner-spacing: 1rem;
     }
-    
+
     @media screen(sm) {
         :root{
             --spacing: 1rem;

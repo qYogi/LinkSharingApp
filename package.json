@@ -7,7 +7,9 @@
   "scripts": {},
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
+    "@types/aws-lambda": "^8.10.145",
     "sst": "^3.1.13",
+    "tailwindcss": "^3.4.12",
     "typescript": "5.3.3"
   },
   "dependencies": {
