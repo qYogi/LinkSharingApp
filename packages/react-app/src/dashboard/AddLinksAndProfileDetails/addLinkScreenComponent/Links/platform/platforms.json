@@ -1,0 +1,16 @@
+[
+  {"name": "GitHub", "icon": "GitHub.svg"},
+  {"name": "FrontendMentor", "icon": "FrontendMentor.svg"},
+  {"name": "Twitter", "icon": "Twitter.svg"},
+  {"name": "LinkedIn", "icon": "LinkedIn.svg"},
+  {"name": "YouTube", "icon": "YouTube.svg"},
+  {"name": "Facebook", "icon": "Facebook.svg"},
+  {"name": "Twitch", "icon": "Twitch.svg"},
+  {"name": "DevTo", "icon": "DevTo.svg"},
+  {"name": "Codewars", "icon": "Codewars.svg"},
+  {"name": "Codepen", "icon": "Codepen.svg"},
+  {"name": "FreeCodeCamp", "icon": "FreeCodeCamp.svg"},
+  {"name": "GitLab", "icon": "GitLab.svg"},
+  {"name": "Hashnode", "icon": "Hashnode.svg"},
+  {"name": "StackOverflow", "icon": "StackOverflow.svg"}
+]

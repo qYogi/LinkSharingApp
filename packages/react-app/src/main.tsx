@@ -7,6 +7,7 @@ import { routeTree } from "./routeTree.gen";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Amplify } from "aws-amplify";
 import config from "./config.ts";
+import { ThemeProvider } from "@material-tailwind/react";
 
 const queryClient = new QueryClient();
 const router = createRouter({ routeTree, context: { queryClient } }); // Create a new router instance
@@ -52,7 +53,9 @@ function App() {
         <AppContext.Provider
           value={{ isAuthenticated, userHasAuthenticated } as AppContextType}
         >
-          <RouterProvider router={router} />
+          <ThemeProvider>
+            <RouterProvider router={router} />
+          </ThemeProvider>
         </AppContext.Provider>
       </QueryClientProvider>
     </StrictMode>

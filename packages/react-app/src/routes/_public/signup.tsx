@@ -10,7 +10,8 @@ export const Route = createFileRoute("/_public/signup")({
         navigate({ to: "/dashboard" });
       })
       .catch(() => {
-        return <SignupScreen />;
+        console.log("re");
       });
+    return <SignupScreen />;
   },
 });
