@@ -21,7 +21,7 @@ export function LoginForm() {
       console.log(fields);
       await Auth.signIn(fields.email, fields.password);
       userHasAuthenticated(true);
-      navigate({ to: "/dashboard" });
+      await navigate({ to: "/dashboard" });
     } catch (error) {
       // Prints the full error
       console.error(error);

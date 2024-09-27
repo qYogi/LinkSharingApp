@@ -47,6 +47,10 @@ Amplify.configure({
 function App() {
   const [isAuthenticated, userHasAuthenticated] = useState(false);
 
+  // API.post("LinkSharingApp", "/seedPlatforms", {})
+  //   .then((response) => console.log(response))
+  //   .catch((error) => console.log(error));
+
   return (
     <StrictMode>
       <QueryClientProvider client={queryClient}>

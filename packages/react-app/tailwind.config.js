@@ -18,6 +18,18 @@ export default {
         white: "var(--white)",
         red: "var(--red)",
       },
+      screens: {
+        sm: "300px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1024px",
+      },
+
+      height: {
+        root: "100vh",
+        "root-100": "100vw",
+        "root-90": "90vw",
+      },
     },
   },
   plugins: [],

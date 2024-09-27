@@ -1,6 +1,6 @@
 import platforms from "./platforms.json";
-import { useState } from "react";
-import { Icons } from "./icons";
+import React, { useState } from "react";
+import { IconComponents } from "./icons";
 
 interface Props {
   selectedPlatform: string;
@@ -40,14 +40,21 @@ export const Dropdown = ({ selectedPlatform, onPlatformChange }: Props) => {
                 className="cursor-pointer w-full text-left"
               >
                 <div className="flex flex-row items-center my-3 text-base">
-                  {Icons[platform.name] && (
-                    <img
-                      src={Icons[platform.name]}
-                      alt={`${platform.name} icon`}
-                      className="mr-2"
-                    />
+                  {IconComponents[platform.name] && (
+                    <span className="mr-2">
+                      {React.createElement(IconComponents[platform.name], {
+                        color:
+                          selectedPlatform === platform.name
+                            ? "#633CFF"
+                            : "#737373",
+                      } as any)}
+                    </span>
                   )}
-                  <span>{platform.name}</span>
+                  <span
+                    className={`${selectedPlatform === platform.name ? "text-purple" : "text-gray"}`}
+                  >
+                    {platform.name}
+                  </span>
                 </div>
               </button>
               <hr className="h-px w-full bg-borders border-0" />
@@ -56,9 +63,11 @@ export const Dropdown = ({ selectedPlatform, onPlatformChange }: Props) => {
         </ul>
       )}
 
-      {Icons[selectedPlatform] && (
+      {IconComponents[selectedPlatform] && (
         <div className="absolute top-1/2 left-3 transform -translate-y-1/2 flex items-center">
-          <img src={Icons[selectedPlatform]} alt="platform icon" />
+          {React.createElement(IconComponents[selectedPlatform], {
+            color: "#737373",
+          } as any)}
         </div>
       )}
     </div>

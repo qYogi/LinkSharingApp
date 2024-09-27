@@ -2,8 +2,8 @@ import { Links } from "./Links.tsx";
 
 export const Navbar = () => {
   return (
-    <div className="background-navbar bg-white h-20 flex items-center justify-center w-full mb-4">
-      <div className=" bg-white flex flex-row h-11 items-center justify-between w-full mx-4 ">
+    <div className="md:h-32 md:flex md:justify-center md:items-center md:mx-inner-spacing">
+      <div className=" bg-white flex flex-row sm:mb-4 md:-0 h-20 items-center rounded-lg  justify-between w-full xl:max-w-root-90 xl:w-root-90 md:h-20">
         <Links />
       </div>
     </div>

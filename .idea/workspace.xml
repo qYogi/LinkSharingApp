@@ -5,51 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="205318c7-20b1-4b08-9bd1-66089204e354" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infra/auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/authentification/LoginForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/AddLinksScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/AddProfileDetailScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/navbar/Links.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/navbar/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/lib/contextLib.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/lib/errorLib.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/lib/hooksLib.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_private.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard/addlinks.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard/profile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_public.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_public/login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_public/signup.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/svg/LinksSvg.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/svg/Logo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/svg/PreviewSvg.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/react-app/src/svg/ProfileSvg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/functions/src/seedPlatforms.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/SaveButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addProfileDetailsScreenComponents/PersonalDetailsForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addProfileDetailsScreenComponents/UploadProfileImage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addProfileDetailsScreenComponents/svg/UploadImageSvg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/leftPanel/RealTimePreview.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/leftPanel/components/EmailPlaceholder.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/leftPanel/components/ImagePlaceholder.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/leftPanel/components/NamePlaceholder.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/leftPanel/components/PreviewSectionIphone.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infra/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/infra/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infra/storage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/infra/storage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/web.ts" beforeDir="false" afterPath="$PROJECT_DIR$/infra/web.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/core/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/sst-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/functions/src/api.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/functions/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/functions/sst-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/react-app/eslint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/eslint.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/react-app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/react-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/authentification/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/authentification/LoginForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/AddLinksScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/AddLinksScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/AddProfileDetailScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/AddProfileDetailScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/AddNewLinkButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/AddNewLinkButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/DragAndDropLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/DragAndDropLinks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/GetStartedScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/GetStartedScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/Dropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/Dropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/Codepen.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/Codepen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/Codewars.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/Codewars.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/DevTo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/DevTo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/Facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/Facebook.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/FreeCodeCamp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/FreeCodeCamp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/FrontendMentor.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/FrontendMentor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/GitHub.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/GitHub.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/GitLab.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/GitLab.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/Hashnode.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/Hashnode.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/LinkedIn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/LinkedIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/StackOverflow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/StackOverflow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/Twitch.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/Twitch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/Twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/Twitter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/YouTube.svg" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/YouTube.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/platforms.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/platforms.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/svgs/GetStartedScreenIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/svgs/GetStartedScreenIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/navbar/Links.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/navbar/Links.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/navbar/Navbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/react-app/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/react-app/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routeTree.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/routeTree.gen.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/(authentication)/login/index.Login.lazy.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/(authentication)/login/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/(authentication)/signup/index.Signup.lazy.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/authentification/SignupScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/(authentication)/signup/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/__root.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/routes/__root.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/_private.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_private.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard/addlinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard/addlinks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard/profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/svg/LinksSvg.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/svg/LinksSvg.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/svg/ProfileSvg.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/svg/ProfileSvg.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/sst-env.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/react-app/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/scripts/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/scripts/sst-env.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sst-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sst.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sst.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,36 +103,38 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#4 on login-signup-UI&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bogdan/WebstormProjects/LinkSharingApp/packages/react-app/src/routes&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;addlinks-UI&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bogdan/WebstormProjects/LinkSharingApp/packages/react-app/public&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/bogdan/WebstormProjects/LinkSharingApp/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/bogdan/WebstormProjects/LinkSharingApp/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/react-app/public" />
+      <recent name="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform/icons" />
       <recent name="$PROJECT_DIR$/packages/react-app/src/routes" />
       <recent name="$PROJECT_DIR$/packages/react-app/authentication/signUp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/packages/react-app/src/routes/_private/dashboard" />
-      <recent name="$PROJECT_DIR$/packages/react-app/src/routes/_private" />
-      <recent name="$PROJECT_DIR$/packages/react-app/src/routes/_private/_addlinks" />
-      <recent name="$PROJECT_DIR$/packages/react-app/src/routes/_private/_dashboard" />
-      <recent name="$PROJECT_DIR$/packages/react-app/src/dashboard/navbar" />
+      <recent name="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails" />
+      <recent name="$PROJECT_DIR$/packages/react-app/src/dashboard/leftPanel" />
+      <recent name="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent" />
+      <recent name="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links/platform" />
+      <recent name="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addLinkScreenComponent/Links" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-WS-242.21829.149" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.22855.79" />
       </set>
     </attachedChunks>
   </component>
@@ -140,7 +154,9 @@
       <workItem from="1726725559422" duration="5458000" />
       <workItem from="1726731406746" duration="680000" />
       <workItem from="1726732172925" duration="18289000" />
-      <workItem from="1726752837983" duration="14150000" />
+      <workItem from="1726752837983" duration="42506000" />
+      <workItem from="1727080652828" duration="50017000" />
+      <workItem from="1727330868609" duration="47266000" />
     </task>
     <servers />
   </component>

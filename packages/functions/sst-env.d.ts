@@ -17,6 +17,10 @@ declare module "sst" {
       "id": string
       "type": "sst.aws.CognitoIdentityPool"
     }
+    "LinksTable": {
+      "name": string
+      "type": "sst.aws.Dynamo"
+    }
     "ProfilePictures": {
       "name": string
       "type": "sst.aws.Bucket"
@@ -29,6 +33,10 @@ declare module "sst" {
       "id": string
       "secret": string
       "type": "sst.aws.CognitoUserPoolClient"
+    }
+    "UserTable": {
+      "name": string
+      "type": "sst.aws.Dynamo"
     }
   }
 }

@@ -7,11 +7,14 @@ import { Link } from "@tanstack/react-router";
 export const Links = () => {
   return (
     <div className="navbar flex flex-row h-11 items-center justify-between w-full mx-4 ">
-      <div>
-        <LogoSvg />
-      </div>
       <div className="flex flex-row">
-        <Link to="/dashboard/addlinks" className="bg-light-purple rounded-xl">
+        <div className="w-8 self-center">
+          <LogoSvg />
+        </div>
+        <h1 className="font-bold text-3xl sm:hidden md:block">devlinks</h1>
+      </div>
+      <div className="flex flex-row md:w-80">
+        <Link to="/dashboard/addlinks" className=" rounded-lg">
           {({ isActive }) => {
             return (
               <>
@@ -20,7 +23,10 @@ export const Links = () => {
             );
           }}
         </Link>
-        <Link to="/dashboard/profile" className="rounded-xl">
+        <Link
+          to="/dashboard/profile"
+          className="md:flex-grow md:bg-light-purple rounded-lg"
+        >
           {({ isActive }) => {
             return (
               <>

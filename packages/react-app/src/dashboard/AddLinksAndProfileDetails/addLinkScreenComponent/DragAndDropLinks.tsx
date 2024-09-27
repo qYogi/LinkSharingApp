@@ -8,22 +8,20 @@ import { GetStartedScreen } from "./GetStartedScreen.tsx";
 interface linksType {
   id: number;
   link: {
-    platform: string;
-    link: string;
+    selectedPlatform: string;
+    url: string;
   };
 }
 
-export function DragAndDropLinks() {
+export function DragAndDropLinks({}) {
   const [links, setLinks] = useState<linksType[]>([]);
-
-  //Update <h3> Link #{id} if the id changes with
 
   const addLink = () => {
     const newLink = {
       id: links.length + 1,
       link: {
-        platform: "",
-        link: "",
+        selectedPlatform: "",
+        url: "",
       },
     };
     setLinks([...links, newLink]);
@@ -52,26 +50,30 @@ export function DragAndDropLinks() {
   };
 
   return (
-    <div className=" mx-auto grid gap-2 my-10">
-      <div className="text-2xl font-bold- mb-4">
+    <div className=" md:max-h-[550px] md:min-h-[550px] md:h-full mx-auto my-10">
+      <div className="text-2xl font-bold- mb-6">
         <AddNewLinkButton onClick={addLink} />
       </div>
-      <div className="h-96 max-h-96 overflow-x-hidden  overflow-y-auto">
+      <div className="md:max-h-[550px] md:h-full">
         {links.length === 0 ? (
-          <GetStartedScreen />
+          <div className=" md:max-h-[500px] md:h-full xl:max-h-[450px] xl:h-full overflow-hidden">
+            <GetStartedScreen />
+          </div>
         ) : (
-          <DndContext onDragEnd={handleDragEnd}>
-            <SortableContext items={links.map((link) => link.id)}>
-              {links.map((link, index) => (
-                <Links
-                  key={link.id}
-                  id={link.id}
-                  displayIndex={index + 1}
-                  handleRemove={handleRemoveLinkItem}
-                />
-              ))}
-            </SortableContext>
-          </DndContext>
+          <div className="h-96 md:max-h-[515px] md:min-h-[469px] md:h-full xl:max-h-[485px] xl:h-full overflow-x-hidden  overflow-y-auto">
+            <DndContext onDragEnd={handleDragEnd}>
+              <SortableContext items={links.map((link) => link.id)}>
+                {links.map((link, index) => (
+                  <Links
+                    key={link.id}
+                    id={link.id}
+                    displayIndex={index + 1}
+                    handleRemove={handleRemoveLinkItem}
+                  />
+                ))}
+              </SortableContext>
+            </DndContext>
+          </div>
         )}
       </div>
     </div>
