@@ -17,10 +17,6 @@ declare module "sst" {
       "id": string
       "type": "sst.aws.CognitoIdentityPool"
     }
-    "LinksTable": {
-      "name": string
-      "type": "sst.aws.Dynamo"
-    }
     "ProfilePictures": {
       "name": string
       "type": "sst.aws.Bucket"

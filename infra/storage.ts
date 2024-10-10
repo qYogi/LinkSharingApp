@@ -16,16 +16,3 @@ export const userTable = new sst.aws.Dynamo("UserTable", {
     linksTableIndex: { hashKey: "links" },
   },
 });
-
-export const linksTable = new sst.aws.Dynamo("LinksTable", {
-  fields: {
-    linkId: "string",
-    platformName: "string",
-    url: "string",
-  },
-  primaryIndex: { hashKey: "linkId" },
-  globalIndexes: {
-    platformNameIndex: { hashKey: "platformName" },
-    urlIndex: { hashKey: "url" },
-  },
-});

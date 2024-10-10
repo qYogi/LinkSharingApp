@@ -1,5 +1,4 @@
 import { DragAndDropLinks } from "./addLinkScreenComponent/DragAndDropLinks.tsx";
-import { SaveButton } from "./SaveButton.tsx";
 
 export const AddLinksScreen = () => {
   return (
@@ -23,7 +22,12 @@ export const AddLinksScreen = () => {
         <hr className="border-0 h-px bg-borders sp mb-5 w-[calc(100vw - 2 * 1.5rem)] -mx-6 md:-mx-10 " />
       </div>
       <div className="md:self-end ">
-        <SaveButton />
+        <button
+          type="submit"
+          className="bg-purple text-white rounded-lg w-full h-12 cursor-pointer xl:justify-center font-semibold mb-6 md:mb-0 hover:bg-light-purple xl:hover:shadow-purple-hover md:self-end md:h-12 md:w-20"
+        >
+          Save
+        </button>
       </div>
     </div>
   );
