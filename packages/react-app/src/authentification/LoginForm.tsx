@@ -33,6 +33,8 @@ export function LoginForm() {
     }
   }
 
+  console.log("Cognito User Pool ID:", import.meta.env.VITE_USER_POOL_ID);
+
   const navigateToSignup = () => {
     navigate({ to: "/signup" });
   };

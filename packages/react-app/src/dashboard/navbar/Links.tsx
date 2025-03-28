@@ -37,7 +37,9 @@ export const Links = () => {
         </Link>
       </div>
       <div>
-        <PreviewSvg />
+        <Link to="/preview">
+          <PreviewSvg />
+        </Link>
       </div>
     </div>
   );

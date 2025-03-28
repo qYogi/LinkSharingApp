@@ -5,4 +5,8 @@ import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), TanStackRouterVite()],
+  build: {
+    // NOTE: Needed when deploying
+    chunkSizeWarningLimit: 800,
+  },
 });

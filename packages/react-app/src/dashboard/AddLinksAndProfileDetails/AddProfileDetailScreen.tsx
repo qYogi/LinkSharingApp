@@ -1,5 +1,6 @@
 import { UploadProfileImage } from "./addProfileDetailsScreenComponents/UploadProfileImage.tsx";
 import { PersonalDetailsForm } from "./addProfileDetailsScreenComponents/PersonalDetailsForm.tsx";
+// import { useFormFields } from "../../lib/hooksLib.ts";
 
 export const AddProfileDetailScreen = () => {
   return (
@@ -14,7 +15,11 @@ export const AddProfileDetailScreen = () => {
           </p>
         </div>
         <UploadProfileImage />
-        <PersonalDetailsForm />
+        <PersonalDetailsForm
+          email={"email"}
+          firstName={"firstName"}
+          lastName={"lastName"}
+        />
       </div>
       <div className=" md:mt-16 md:flex md:flex-col">
         <hr className="border-0 h-px bg-borders sp mb-5 w-[calc(100vw - 2 * 1.5rem)] md:justify-end -mx-6 md:-mx-10" />

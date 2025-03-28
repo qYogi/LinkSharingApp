@@ -5,20 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="205318c7-20b1-4b08-9bd1-66089204e354" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/functions/src/getUserTable.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/preview/PreviewScreen.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/react-app/src/routes/_private/preview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/infra/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/storage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/infra/storage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/core/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/sst-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/functions/src/seedPlatforms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/functions/src/seedPlatforms.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/functions/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/functions/sst-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/AddLinksScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/AddLinksScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/authentification/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/authentification/LoginForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/AddProfileDetailScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/AddProfileDetailScreen.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/SaveButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addProfileDetailsScreenComponents/PersonalDetailsForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/AddLinksAndProfileDetails/addProfileDetailsScreenComponents/PersonalDetailsForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/dashboard/navbar/Links.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/dashboard/navbar/Links.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/routeTree.gen.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/routeTree.gen.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/src/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/src/sst-env.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/react-app/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/sst-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/tsconfig.app.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/tsconfig.app.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/tsconfig.node.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/tsconfig.node.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/react-app/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/react-app/vite.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/scripts/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/scripts/sst-env.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sst-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/sst-env.d.ts" afterDir="false" />
     </list>
@@ -58,23 +61,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "UploadProfileImage",
-    "last_opened_file_path": "/Users/bogdan/WebstormProjects/LinkSharingApp/packages/react-app/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/bogdan/WebstormProjects/LinkSharingApp/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/bogdan/WebstormProjects/LinkSharingApp/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;getUserDetails-route&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bogdan/WebstormProjects/LinkSharingApp/packages/react-app/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/bogdan/WebstormProjects/LinkSharingApp/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/bogdan/WebstormProjects/LinkSharingApp/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/packages/react-app/public" />
@@ -93,7 +96,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.22855.79" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.24807.6" />
       </set>
     </attachedChunks>
   </component>
@@ -119,7 +122,15 @@
       <workItem from="1727943687001" duration="1255000" />
       <workItem from="1728313836305" duration="4315000" />
       <workItem from="1728485597348" duration="204000" />
-      <workItem from="1728558373918" duration="5285000" />
+      <workItem from="1728558373918" duration="5942000" />
+      <workItem from="1728579831317" duration="159000" />
+      <workItem from="1728580074172" duration="364000" />
+      <workItem from="1729847492437" duration="3569000" />
+      <workItem from="1730290105417" duration="1125000" />
+      <workItem from="1738331252562" duration="41000" />
+      <workItem from="1741346797594" duration="22042000" />
+      <workItem from="1742209033302" duration="598000" />
+      <workItem from="1743148438575" duration="3390000" />
     </task>
     <servers />
   </component>

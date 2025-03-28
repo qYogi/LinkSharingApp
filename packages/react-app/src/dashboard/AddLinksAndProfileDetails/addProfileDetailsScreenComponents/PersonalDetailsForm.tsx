@@ -1,10 +1,16 @@
 import { useFormFields } from "../../../lib/hooksLib.ts";
 
-export const PersonalDetailsForm = () => {
+interface Props {
+  firstName: string;
+  lastName: string;
+  email: string;
+}
+
+export const PersonalDetailsForm = ({ firstName, lastName, email }: Props) => {
   const [fields, handleFieldChange] = useFormFields({
-    firstName: "",
-    lastName: "",
-    email: "",
+    firstName,
+    lastName,
+    email,
   });
 
   return (
